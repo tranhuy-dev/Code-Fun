@@ -1,0 +1,33 @@
+.topics-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #222437;
+}
+
+.header-img {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/huytran-3e2fe.appspot.com/o/maxresdefault.jpg?alt=media&token=8bea4f74-9fd0-4177-80f8-64f0f9a71eb9");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 20rem;
+    padding-top: 20rem;
+}
+
+.header-title{
+    font-size: 50px;
+    color: white;
+}
+
+.body-topics{
+    color: white;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+
+
+.list-topic-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}

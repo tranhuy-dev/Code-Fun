@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './header.css';
+import { Link } from 'react-router-dom';
 class Header extends Component {
     constructor(props) {
         super(props)
@@ -9,8 +10,16 @@ class Header extends Component {
         return (
             <div>
                 <div className="topnav">
-                    <a className="active" href="#home">Home</a>
-                    <a href="#news">Topic</a>
+                    <Link
+                        to={{
+                            pathname: '/'
+                        }}
+                    >Home</Link>
+                    <Link
+                        to={{
+                            pathname: '/topics'
+                        }}
+                    >Topics</Link>
                     <a href="#contact">Fun Code</a>
                     <a href="#about">Outside</a>
                 </div>

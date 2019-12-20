@@ -1,0 +1,20 @@
+.contact-container{
+    color: white;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #222437 ;
+}
+
+.form-contact{
+    margin-bottom: 3rem;
+}
+
+.social-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-container a{
+    margin: 1rem;
+}

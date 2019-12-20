@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './home.css'
-import { FaFacebookF ,FaLinkedinIn,FaGithub } from 'react-icons/fa';
 class Home extends Component {
     constructor(props) {
         super(props)
@@ -94,28 +93,6 @@ class Home extends Component {
                                 <p>Intern developer at TMA Solutions. I learned Agile , tools for Devops likes Jenkins , Nginx , Docker and javascript es6 </p>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div className="contact-container">
-                    <div className="form-contact">
-                        CONTACT
-                        <br />
-                        tqhuy1996.developer@gmail.com
-                        <br />
-                        Tel: 84-946515847
-                    </div>
-
-                    <div className="social-container">
-                        <a href="https://www.facebook.com/huytran.prince" target="_blank">
-                        <FaFacebookF color="white" size="30px"/>
-                        </a>
-                        <a href="https://www.linkedin.com/in/huy-tran-777551178/" target="_blank">
-                        <FaLinkedinIn color="white" size="30px"/>
-                        </a>
-                        <a href="https://github.com/tqhuy-dev" target="_blank">
-                        <FaGithub color="white" size="30px"/>
-                        </a>
                     </div>
                 </div>
             </div>

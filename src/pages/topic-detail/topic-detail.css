@@ -1,0 +1,19 @@
+.topic-detail-container{
+    background-color: #222437;
+}
+
+.topic-detail-content-container{
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-topic-detail {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 1rem;
+    border-bottom: 2px solid rgb(190, 190, 190);
+}

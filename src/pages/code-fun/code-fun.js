@@ -11,20 +11,15 @@ export default class CodeFun extends Component {
         return (
             <div className="code-fun-container">
                 <div className="header-img-code">
-                    <div className="header-title">Write Your Code , Change Your World</div>
+                    <div className="header-title">Write Your Code Change Your World</div>
                 </div>
                 <div className="code-title-container">
                     <Container>
                         <Row>
-                            <Col><CardCodeFun/></Col>
-                            <Col><CardCodeFun/></Col>
-                        </Row>
-                    </Container>
-                    <br/>
-                    <Container>
-                        <Row>
-                            <Col><CardCodeFun/></Col>
-                            <Col><CardCodeFun/></Col>
+                            <Col xs={12} md={6}><CardCodeFun/></Col>
+                            <Col xs={12} md={6}><CardCodeFun/></Col>
+                            <Col xs={12} md={6}><CardCodeFun/></Col>
+                            <Col xs={12} md={6}><CardCodeFun/></Col>
                         </Row>
                     </Container>
                 </div>

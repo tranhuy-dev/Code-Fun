@@ -1,0 +1,21 @@
+.code-fun-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-img-code {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/huytran-3e2fe.appspot.com/o/code.jpg?alt=media&token=c003d0a3-7673-4827-9e37-e159f6abb392");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 20rem;
+    padding-top: 20rem;
+}
+
+.code-title-container{
+    background-color: #222437;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* 151d26 */

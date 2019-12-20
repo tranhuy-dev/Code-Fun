@@ -20,7 +20,11 @@ class Header extends Component {
                             pathname: '/topics'
                         }}
                     >Topics</Link>
-                    <a href="#contact">Fun Code</a>
+                    <Link
+                        to={{
+                            pathname: '/codefun'
+                        }}
+                    >Code Fun</Link>
                     <a href="#about">Outside</a>
                 </div>
             </div>

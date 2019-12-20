@@ -1,0 +1,16 @@
+.card-code-fun-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #151D26;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.card-code-title{
+    font-size: 40px;
+}
+
+.card-code-total-pro{
+    font-size: 40px;
+}

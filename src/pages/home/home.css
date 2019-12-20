@@ -135,7 +135,7 @@
 }
 
 /* Container around content */
-.container {
+.container-tl {
   /* padding: 10px 40px; */
   position: relative;
   background-color: inherit;
@@ -143,7 +143,7 @@
 }
 
 /* The circles on the timeline */
-.container::after {
+.container-tl::after {
   content: "";
   position: absolute;
   width: 25px;
@@ -218,13 +218,13 @@
   }
 
   /* Full-width containers */
-  .container {
+  .container-tl {
     width: 80%;
     padding-left: 70px;
   }
 
   /* Make sure that all arrows are pointing leftwards */
-  .container::before {
+  .container-tl::before {
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;

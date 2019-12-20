@@ -69,7 +69,7 @@ class Home extends Component {
                 <div className="timeline-con">
                     <h2 className="about-us-header-timeline">My Career Timeline</h2>
                     <div className="timeline">
-                        <div className="container left">
+                        <div className="container-tl left">
                             <div className="content">
                                 <h2>2019</h2>
                                 <p>Back-end Developer at Monster Pixel. I build 3 website application using nodejs.
@@ -78,7 +78,7 @@ class Home extends Component {
                             </p>
                             </div>
                         </div>
-                        <div className="container right">
+                        <div className="container-tl right">
                             <div className="content">
                                 <h2>2018</h2>
                                 <p>Full stack Developer at Fujinet. I build 2 website application using nodejs and golang.
@@ -87,7 +87,7 @@ class Home extends Component {
                             </p>
                             </div>
                         </div>
-                        <div className="container left">
+                        <div className="container-tl left">
                             <div className="content">
                                 <h2>2017</h2>
                                 <p>Intern developer at TMA Solutions. I learned Agile , tools for Devops likes Jenkins , Nginx , Docker and javascript es6 </p>

@@ -17,3 +17,8 @@
     padding: 1rem;
     border-bottom: 2px solid rgb(190, 190, 190);
 }
+
+.content-container{
+    text-align: left;
+    padding: 1rem;
+}

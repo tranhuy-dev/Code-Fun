@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './topic-detail.css';
 import * as firebase from 'firebase';
+import renderHTML from 'react-render-html';
 export default class TopicDetail extends Component {
     constructor(props) {
         super(props)
@@ -41,8 +42,8 @@ export default class TopicDetail extends Component {
                 <div className="topic-detail-content-container">
                     <img src={this.state.topic.image} />
                     <div className="title-topic-detail">{this.state.topic.title}</div>
-                    <div>
-                        {this.state.topic.content}
+                    <div className="content-container">
+                        {renderHTML(this.state.topic.content)}
                     </div>
                 </div>
             </div>

@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route path="/topics/:id" component={TopicDetail} />
+          {/* <Route path="/topics/1" component={TopicDetail} /> */}
           <Route path="/topics" component={Topics} />
           <Route path="/codefun" component={CodeFun} />
           <Route path="/" component={Home} />

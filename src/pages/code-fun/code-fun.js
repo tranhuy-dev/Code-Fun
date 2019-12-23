@@ -1,10 +1,27 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import './code-fun.css';
 import CardCodeFun from './components/card-code-fun';
 import { Container, Row, Col } from 'react-bootstrap';
+import * as firebase from 'firebase';
 export default class CodeFun extends Component {
     constructor(props) {
         super(props)
+    }
+
+    state = {
+        github: []
+    }
+
+    componentDidMount() {
+        firebase.firestore().collection('github').get().then((snapshot) => {
+            let dataGit = [];
+            snapshot.forEach((data) => {
+                dataGit.push(
+                    {id: data.id , name: data.data().name , count: data.data().count}
+                )
+            })
+            this.setState({github: dataGit})
+        });
     }
 
     render() {
@@ -16,10 +33,13 @@ export default class CodeFun extends Component {
                 <div className="code-title-container">
                     <Container>
                         <Row>
-                            <Col xs={12} md={6}><CardCodeFun/></Col>
-                            <Col xs={12} md={6}><CardCodeFun/></Col>
-                            <Col xs={12} md={6}><CardCodeFun/></Col>
-                            <Col xs={12} md={6}><CardCodeFun/></Col>
+                            {this.state.github.map((element , index) => {
+                                return (
+                                    <Fragment key={index}>
+                                        <Col xs={12} md={6}><CardCodeFun name={element.name} count={element.count}/></Col>
+                                    </Fragment>
+                                )
+                            })}
                         </Row>
                     </Container>
                 </div>

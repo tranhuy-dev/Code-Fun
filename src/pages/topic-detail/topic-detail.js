@@ -1,18 +1,48 @@
 import React, { Component } from 'react';
-import './topic-detail.css'
+import './topic-detail.css';
+import * as firebase from 'firebase';
 export default class TopicDetail extends Component {
     constructor(props) {
         super(props)
+    }
+
+    state = {
+        topic: {
+            id: '',
+            image: '',
+            title: '',
+            content: ''
+        }
+    }
+
+    componentWillMount() {
+        const docRef = firebase.firestore().collection('topics').doc(this.props.match.params.id);
+
+        docRef.get().then((doc) => {
+            if (doc.exists) {
+                const dataTopic = {
+                    id: this.props.match.params.id,
+                    image: doc.data().image,
+                    title: doc.data().title,
+                    content: doc.data().content
+                };
+                this.setState({ topic: dataTopic });
+            } else {
+                console.log("No document")
+            }
+        }).catch((error) => {
+            console.log(error)
+        })
     }
 
     render() {
         return (
             <div className="topic-detail-container">
                 <div className="topic-detail-content-container">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/huytran-3e2fe.appspot.com/o/microsvc.png?alt=media&token=12f51c9e-9c4e-4c95-ab2f-c831922d863b" />
-                    <div className="title-topic-detail">What is microservices</div>
+                    <img src={this.state.topic.image} />
+                    <div className="title-topic-detail">{this.state.topic.title}</div>
                     <div>
-                        title
+                        {this.state.topic.content}
                     </div>
                 </div>
             </div>

@@ -1,9 +1,14 @@
-import React , {Component} from 'react';
+import React , {Component, Fragment} from 'react';
 import './topics.css'
 import CardTopic from './components/card-topic'
 class Topics extends Component {
     constructor(props) {
         super(props)
+    }
+
+    handleTopicDetail(id) {
+        console.log(id)
+        this.props.history.push( 'topics/' +id);
     }
 
     render() {
@@ -15,12 +20,9 @@ class Topics extends Component {
                 <div className="body-topics">
                     <h2>Topics</h2>
                     <div className="list-topic-container">
+                        <div onClick={() => this.handleTopicDetail('v4SAUsjzJUgbe0fhwEMO')}>
                         <CardTopic/>
-                        <CardTopic/>
-                        <CardTopic/>
-                        <CardTopic/>
-                        <CardTopic/>
-                        <CardTopic/>
+                        </div>
                     </div>
                 </div>
             </div>

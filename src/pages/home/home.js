@@ -72,7 +72,7 @@ class Home extends Component {
                     <div className="timeline">
                         <div className="container-tl left">
                             <div className="content">
-                                <h2>February 2019 - Present</h2>
+                                <h2>Feb 2019 - Present</h2>
                                 <p>Back-end Developer at Monster Pixel. I build 3 website application using nodejs.
                                 <br />Xspon.com: An e-commerce website application about events. Using nodejs with framework nestjs and database MySQL. Continuous integration by Circle CI and deploy on Google Cloud. This e-commerce website have over 2000 access per week
                                 <br />Misscharm: A blockchain website application for voting. Using nodejs ,express and database MongoDB. Continuous integration and testing by Circle CI and deploy on Firebase hosting.
@@ -81,7 +81,7 @@ class Home extends Component {
                         </div>
                         <div className="container-tl right">
                             <div className="content">
-                                <h2>March 2018 - November 2018</h2>
+                                <h2>Mar 2018 - Nov 2018</h2>
                                 <p>Full stack Developer at Fujinet. I build 2 website application using nodejs and golang.
                                 <br />Eesty: A blockchain android application. I build back-end for this app by nodejs , express and dynamicDB. Deploy it on AWS.
                                 <br />Foody Jounal: A management website application. I build front-end for this web by reactjs and redux.
@@ -90,7 +90,7 @@ class Home extends Component {
                         </div>
                         <div className="container-tl left">
                             <div className="content">
-                                <h2>Jannuary 2018 - March 2018</h2>
+                                <h2>Jan 2018 - Mar 2018</h2>
                                 <p>Intern developer at TMA Solutions. I learned Agile , tools for Devops likes Jenkins , Nginx , Docker and javascript es6 </p>
                             </div>
                         </div>

@@ -8,9 +8,9 @@ class Home extends Component {
     render() {
         return (
             <div className="home-container">
-                {/* <div className="img-session">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/huytran-3e2fe.appspot.com/o/Plexus2%20PR.jpg?alt=media&token=f4cdb638-87d1-4418-906d-68190f1576af"></img>
-                </div> */}
+                <div>
+                    <img className="img-session" src="https://firebasestorage.googleapis.com/v0/b/huytran-3e2fe.appspot.com/o/Screen%20Shot%202019-12-23%20at%205.37.06%20PM.png?alt=media&token=e78b2c2e-d968-42d2-b8c5-7bcd140bf6af"></img>
+                </div>
                 <div className="about-us-session">
                     <h2 className="about-us-header">About Me</h2>
                     <div className="about-us-body">Hello, my name is Tran Quoc Huy. I am a full stack developer (Nodejs, Golang, Reactjs, Angular) and have had over 2 years in building website applications, from creating interfaces, server handling, database design and putting it on the cloud.

@@ -74,7 +74,7 @@ class Home extends Component {
                             <div className="content">
                                 <h2>2019</h2>
                                 <p>Back-end Developer at Monster Pixel. I build 3 website application using nodejs.
-                                <br />Xspon.com: An e-commerce website application about events. Using nodejs with framework nestjs and database MySQL. Continuous integration by Jenkins and deploy on Google Cloud. This e-commerce website have over 2000 access per week
+                                <br />Xspon.com: An e-commerce website application about events. Using nodejs with framework nestjs and database MySQL. Continuous integration by Circle CI and deploy on Google Cloud. This e-commerce website have over 2000 access per week
                                 <br />Misscharm: A blockchain website application for voting. Using nodejs ,express and database MongoDB. Continuous integration and testing by Circle CI and deploy on Firebase hosting.
                             </p>
                             </div>

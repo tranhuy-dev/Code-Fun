@@ -20,7 +20,8 @@ class Home extends Component {
                 <div className="component-container">
                     <h2 className="about-us-header">My component</h2>
                     <div className="container-detail">
-                        <div className="component-description">During the time I worked, I worked on many projects and applied the right technology to create the best e-commerce websites. Use github to manage source code. Working through famous databases like mongodb, postresDB, DynamicDB. Learn and successfully apply express, redux, redux-saga, context api, nestjs. I also successfully deployed to famous clouds like kubernetes, firebase </div>
+                        <div className="component-description">During the time I worked, I worked on many projects and applied the right technology to create the best e-commerce websites. Use github to manage source code. Working through famous databases like mongodb, postresDB, DynamicDB. Learn and successfully apply express, redux,
+                         redux-saga, context api, nestjs. I also successfully deployed to famous clouds like kubernetes, firebase, heroku </div>
                         <div className="component-image">
 
                             <p>Nodejs</p>

@@ -17,11 +17,15 @@ export default class CodeFun extends Component {
             let dataGit = [];
             snapshot.forEach((data) => {
                 dataGit.push(
-                    {id: data.id , name: data.data().name , count: data.data().count}
+                    {id: data.id , name: data.data().name , count: data.data().count , link: data.data().link}
                 )
             })
             this.setState({github: dataGit})
         });
+    }
+
+    linkToPage(url) {
+        this.props.history.push('codefun/' + url);
     }
 
     render() {
@@ -35,8 +39,11 @@ export default class CodeFun extends Component {
                         <Row>
                             {this.state.github.map((element , index) => {
                                 return (
-                                    <Fragment key={index}>
-                                        <Col xs={12} md={6}><CardCodeFun name={element.name} count={element.count}/></Col>
+                                    <Fragment
+                                    key={index}>
+                                        <Col
+                                        onClick={() => this.linkToPage(element.link)}
+                                        xs={12} md={6}><CardCodeFun name={element.name} count={element.count}/></Col>
                                     </Fragment>
                                 )
                             })}

@@ -1,0 +1,35 @@
+.fun-project-container{
+    background-color: #F3F7F7;
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.fun-project-card{
+    box-shadow: 0 6px 16px 0 rgba(0,0,0,.2);
+    background-color: #FFFFFF;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: black;
+    padding: 1rem;
+}
+
+.fun-project-title{
+    color: #222437;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.fun-project-tech{
+    margin-top: 1rem;
+    color: #576871;
+}
+
+.fun-project-description{
+    font-size: 18px;
+}

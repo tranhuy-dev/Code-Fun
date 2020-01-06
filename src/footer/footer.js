@@ -10,7 +10,7 @@ export default class Footer extends Component {
         return (
             <div className="contact-container">
                     <div className="form-contact">
-                        CONTACT
+                         <div>CONTACT</div>
                         <br />
                         tqhuy1996.developer@gmail.com
                         <br />
